@@ -3,48 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+      href="./assets/images/favicon-32x32.png"/>
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | News homepage</title>
   </head>
+
   <body>
     <header>
-      <img src="assets/images/logo.svg" alt="" />
-      <nav>
-        <ul>
-          <li>Home</li> 
-          <li>New</li> 
-          <li>Popular</li> 
-          <li>Trending</li> 
-          <li>Categories</li>
-        </ul>
-      </nav>
-      <img class="menu-icon" id="menu-icon" src="assets/images/icon-menu.svg" alt="">
+      <img class="header-logo" src="assets/images/logo.svg" alt="" />
+        <nav class="header-navigation">
+          <ul class="desktop-ul mobile-ul">
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+      <div>
+        <img class="menu-icon" id="menu-icon" src="assets/images/icon-menu.svg" alt="">
+        <img class="close-icon" id="close-icon" src="assets/images/icon-menu-close.svg" alt="">
+      </div>
     </header>
     
     <main>
-      <!-- <img class="hero" src="assets/images/image-web-3-mobile.jpg" alt=""/> -->
-
       <picture class="hero">
         <source media="(min-width: 800px)" srcset="assets/images/image-web-3-desktop.jpg">
-        <img class="hero" src="assets/images/image-web-3-mobile.jpg" alt="Opis slike">
+        <img class="hero" src="assets/images/image-web-3-mobile.jpg" alt="Colorful blocks">
       </picture> 
       <h1>The Bright Future of Web 3.0?</h1>
-
       <div class="head-article">
         <p class="head-paragraf">
           We dive into the next evolution of the web that claims to put the
@@ -79,8 +78,7 @@
         </article>
       </aside>
 
-      
-        <article class="top-post top1">
+        <article class="top-post top-post1">
           <img src="assets/images/image-retro-pcs.jpg" alt="" />
           <div>
             <h4>01</h4>
@@ -89,7 +87,7 @@
           </div>
         </article>
 
-        <article class="top-post top2">
+        <article class="top-post top-post2">
           <img src="assets/images/image-top-laptops.jpg" alt="" />
           <div>
             <h4>02</h4>
@@ -97,7 +95,7 @@
             <p>Our best picks for various needs and budgets.</p>
           </div>
         </article>
-        <article class="top-post top3">
+        <article class="top-post top-post3">
           <img src="assets/images/image-gaming-growth.jpg" alt="" />
           <div>
             <h4>03</h4>
@@ -111,7 +109,7 @@
     <!-- <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">M.Corusa</a>.
     </div>
   </footer> -->
 

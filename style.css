@@ -14,13 +14,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   padding: 1.2rem;
   font-family: "Inter";
-  font-size: 17px;
   line-height: 1.8;
+
 }
 
+/* Header */
 
 header {
   display: flex;
@@ -28,22 +30,42 @@ header {
   justify-content: space-between;
   margin-bottom: 2.2rem;
 }
-nav {
+
+.mobile-ul{
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top:0;
+  right: 0;
+  height: 100%;
+  width: 67%;
+  background-color: var(--clr-neutral-100);
+  list-style: none;
+  padding: 10rem 3rem;
+  font-weight: 600;
+  font-size: 1.3rem
+}
+.mobile-ul.open {
+  display: flex; 
+}
+
+.close-icon {
   display: none;
 }
 
-ul {
-  display: flex;
-  gap: 2rem;
+.close-icon.open{
+  display: block;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 1rem;
+  z-index: 999; 
+  
 }
 
-li {
-  list-style: none;
-  padding-inline: 5px;
-}
+/* Main */
 
-main {
-}
 .hero {
   margin-bottom: 1rem;
 }
@@ -54,18 +76,19 @@ img {
 h1 {
   margin-bottom: 1rem;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1;
 }
 h2 {
   color: var(--clr-accent);
-  font-size: 36px;
+  font-size: 2.25rem;
   margin-bottom: 0.95rem;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
+
 h3:hover,
 li:hover {
   color: var(--clr-accent);
@@ -93,12 +116,12 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   padding: 1rem 2.5rem;
   display: inline-block;
-  margin-top: 24px;
-  margin-bottom: 68px;
-  font-size: 15px;
+  margin-top: 1.5rem;
+  margin-bottom: 4.25rem;
+  font-size: 0.95rem;
   font-weight: 700;
 }
 .btn-link:hover {
@@ -110,7 +133,6 @@ aside {
   background-color: var(--clr-neutral-700);
   color: white;
   padding: 1rem 1.5rem 0.9rem 1.5rem;
-  /* margin-bottom: 4rem; */
   margin-bottom: 4.2rem;
 }
 aside p {
@@ -126,7 +148,7 @@ aside .last-paragraf {
   padding-bottom: 1.2rem;
 }
 
-/* -------- TOP POST -------- */
+/* Top Posts */
 
 .top-post {
   display: flex;
@@ -141,43 +163,57 @@ aside .last-paragraf {
 }
 
 .top-post p {
-  font-size: 17px;
+  font-size: 1.06rem;
 }
 .top-post h5 {
-  font-size: 21px;
+  font-size: 1.3rem;
   margin-bottom: 0.3rem;
 }
 .top-post h4 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
 
+
 @media screen and (min-width: 800px) {
   body {
     margin: 3rem 7rem;
-    /* min-height: 100vh; */
   }
-  nav {
-    display: block;
-  }
-  .menu-icon{
+
+  header div{
     display: none;
   }
+
+  /* Navigation list */
+
+  .desktop-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color:inherit;
+    height:initial;
+    width: initial;
+    position: initial;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+
+
+/* Layout */
+
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-        /* 'header header header' */
       "hero hero aside"
-      "h1 head-paragraf aside"
+      "h1 head-p aside"
       "top1 top2 top3";
     gap: 2rem;
   }
-  header {
-    grid-area: header;
-  }
+
   .hero {
     grid-area: hero;
     height: 100%;
@@ -190,20 +226,19 @@ aside .last-paragraf {
     grid-area: h1;
   }
   .head-article {
-    grid-area: head-paragraf;
+    grid-area: head-p;
   }
-
-  .top1 {
+  .top-post1 {
     grid-area: top1;
   }
-  .top2 {
+  .top-post2 {
     grid-area: top2;
   }
-  .top3 {
+  .top3-post3 {
     grid-area: top3;
   }
   .top-post h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .top-post p {
     font-size: 1rem;
