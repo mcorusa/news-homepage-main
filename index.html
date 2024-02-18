@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/logo.svg" alt="" />
+      <nav>
+        <ul>
+          <li>Home</li> 
+          <li>New</li> 
+          <li>Popular</li> 
+          <li>Trending</li> 
+          <li>Categories</li>
+        </ul>
+      </nav>
+      <img class="menu-icon" id="menu-icon" src="assets/images/icon-menu.svg" alt="">
+    </header>
+    
+    <main>
+      <!-- <img class="hero" src="assets/images/image-web-3-mobile.jpg" alt=""/> -->
+
+      <picture class="hero">
+        <source media="(min-width: 800px)" srcset="assets/images/image-web-3-desktop.jpg">
+        <img class="hero" src="assets/images/image-web-3-mobile.jpg" alt="Opis slike">
+      </picture> 
+      <h1>The Bright Future of Web 3.0?</h1>
+
+      <div class="head-article">
+        <p class="head-paragraf">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <a class="btn-link" href="">Read more</a>
+      </div>
+
+      <aside>
+        <h2 class="aside-heading">New</h2>
+
+        <article>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+
+        <article>
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+
+        <article>
+          <h3>Is VC Funding Drying Up?</h3>
+          <p class="last-paragraf">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </aside>
+
+      
+        <article class="top-post top1">
+          <img src="assets/images/image-retro-pcs.jpg" alt="" />
+          <div>
+            <h4>01</h4>
+            <h5>Reviving Retro PCs</h5>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+
+        <article class="top-post top2">
+          <img src="assets/images/image-top-laptops.jpg" alt="" />
+          <div>
+            <h4>02</h4>
+            <h5>Top 10 Laptops of 2022</h5>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article class="top-post top3">
+          <img src="assets/images/image-gaming-growth.jpg" alt="" />
+          <div>
+            <h4>03</h4>
+            <h5>The Growth of Gaming</h5>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      
+    </main>
+
+    <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer> -->
+
+  <script src="index.js"></script>
+  </body>
+</html>
