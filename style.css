@@ -115,7 +115,7 @@ p {
   background-color: var(--clr-accent-600);
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: var(--clr-neutral-100);
   letter-spacing: 0.25rem;
   padding: 1rem 2.5rem;
   display: inline-block;
@@ -131,7 +131,7 @@ p {
 
 aside {
   background-color: var(--clr-neutral-700);
-  color: white;
+  color: var(--clr-neutral-100);
   padding: 1rem 1.5rem 0.9rem 1.5rem;
   margin-bottom: 4.2rem;
 }
