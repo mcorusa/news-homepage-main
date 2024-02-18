@@ -19,6 +19,7 @@ body {
   padding: 1.2rem;
   font-family: "Inter";
   line-height: 1.8;
+  background-color: var(--clr-neutral-100);
 
 }
 
